@@ -1,0 +1,122 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 1000;
+}
+
+.drawer-modal {
+    width: 420px;
+    background-color: var(--white);
+    margin-left: auto;
+    height: 100vh;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.drawer-modal__title {
+    font-size: 24px;
+    font-weight: var(--bold);
+}
+
+.cart {
+    flex: 1;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+
+}
+
+.cart-item__img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.cart-item__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.cart-item__price {
+    font-size: 14px;
+    font-weight: var(--bold);
+}
+
+.cart-item__icon,
+.search-input {
+    opacity: 0.5;
+    cursor: var(--pointer);
+    transition: 0.15s ease-in-out;
+}
+
+.cart-item__icon:hover .search-input {
+    opacity: 1;
+}
+
+.cart-footer-list__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cart-footer__title {
+    font-size: 16px;
+    font-weight: var(--medium);
+}
+
+.cart-footer__price {
+    font-weight: var(--semiBold);
+}
+
+.cart-footer__line {
+    flex: 1;
+    position: relative;
+    top: 4px;
+    margin: 0 7px;
+    height: 1px;
+    border-bottom: 1px dashed var(--gray-bright);
+}
+
+.cart-btn {
+    width: 100%;
+    padding: 28px 16px;
+    background-color: var(--primary-color);
+    border-radius: 18px;
+    border: none;
+    font-size: 16px;
+    color: var(--white);
+    font-weight: var(--semiBold);
+    position: relative;
+}
+
+.cart-btn:hover {
+    background: rgba(155, 181, 88, 0.99)
+}
+
+.cart-btn-icon {
+    position: absolute;
+    right: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cart-btn:hover .cart-btn-icon {
+    transform: translateX(10px);
+}
